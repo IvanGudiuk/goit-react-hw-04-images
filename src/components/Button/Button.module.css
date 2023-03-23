@@ -1,0 +1,9 @@
+.btn {
+  display: block;
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: dodgerblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
