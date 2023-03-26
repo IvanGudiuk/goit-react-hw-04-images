@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Searchbar } from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
-// import { Modal } from './Modal/Modal';
 export class App extends Component {
   state = {
     query: '',
@@ -38,14 +37,12 @@ export class App extends Component {
           display: 'flex',
           flexDirection: 'column',
           gap: '20',
-          // justifyContent: 'center',
           alignItems: 'center',
           fontSize: 40,
           color: '#010101',
           paddingBottom: 20,
         }}
       >
-        {/* <Modal /> */}
         <Searchbar query={this.onSubmit} />
         <ImageGallery
           query={query}
