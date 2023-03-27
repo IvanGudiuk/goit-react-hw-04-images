@@ -16,7 +16,6 @@ export function ImageGallery({ query, currentPage, onFetchComplete }) {
     if (e.currentTarget === e.target || e.code === 'Escape')
       setIsModalOpen(s => !s);
   };
-
   const clickHandler = id => {
     setLoading(true);
     const image = images.find(image => image.id === id);
