@@ -7,7 +7,6 @@ export function App() {
   const [query, setQuery] = useState('');
   const [success, setSuccess] = useState(false);
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false);
 
   const onSubmit = data => {
     setQuery(data);
@@ -17,7 +16,6 @@ export function App() {
   const onFetch = data => {
     if (data.length > 0) {
       setSuccess(true);
-      setLoading(false);
     }
   };
 
